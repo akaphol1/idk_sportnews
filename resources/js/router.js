@@ -6,7 +6,21 @@ import newRoutePage from './components/pages/newRoutePage.vue'
 import hooks from './components/pages/basic/hooks.vue'
 import methods from './components/pages/basic/method.vue'
 
+//project pages
+import home from './components/pages/home.vue'
+import tags from './components/pages/tags'
 const routes = [
+
+    {
+        path: '/',
+        component: home,
+    },
+
+    {
+        path: '/tags',
+        component: tags,
+    },
+
     {
         path: '/my-new-vue-route',
         component: firstPage,
@@ -20,17 +34,19 @@ const routes = [
     //vue hooks
     {
         path: '/hooks',
-        component: hooks
+        component: hooks,
     },
 
     // more basic
     {
         path: '/methods',
-        component: methods
+        component: methods,
     },
+
+
 ]
 
 export default new Router({
-    mode:'history',
+    mode: 'history',
     routes
 })
