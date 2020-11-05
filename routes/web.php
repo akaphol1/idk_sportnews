@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/testpage',function(){
     return view('welcome');
 });
+Route::get('/news','NewsController@controllerMethod');
 
-Route::get('/', function () {
+Route::any('{slug}',function(){
     return view('welcome');
 });
-
