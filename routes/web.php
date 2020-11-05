@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('app/create_tag','NewsController@test');
+
 Route::get('/',function(){
     return view('welcome');
 });

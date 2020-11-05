@@ -11,4 +11,10 @@ class NewsController extends Controller
                 'msg' => 'we are it'
             ]);
         }
+        public function test(){
+            return response()->json([
+                'msg'=>'some error occured'
+
+            ],422);
+        }
 }
