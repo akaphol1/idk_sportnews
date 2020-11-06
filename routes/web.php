@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('app/create_tag','NewsController@test');
+Route::post('app/create_tag','AdminController@addTag');
+Route::get('app/get_tag','AdminController@getTag');
+
 
 Route::get('/',function(){
     return view('welcome');
